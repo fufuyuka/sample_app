@@ -22,10 +22,9 @@ class ListsController < ApplicationController
   def edit
   end
 
-  def private
-    #ストロングパラメータ
-    def list_params
-      params.require(:list).permit(:title,:body)
-    end
+private
+  #ストロングパラメータ
+  def list_params
+    params.require(:list).permit(:title, :body)
   end
 end
